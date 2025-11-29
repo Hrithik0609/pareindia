@@ -5,7 +5,7 @@ import { headerLinks } from '@/utils/helpers';
 
 const Header = () => {
     return (
-        <div className='flex items-center py-2 lg:px-0 px-4 lg:w-11/12 mx-auto w-full sticky justify-between'>
+        <div className='flex items-center py-2 lg:px-16 px-4 w-full fixed bg-white z-10 shadow justify-between'>
             <img src="/logo.png" alt="logo" className='w-24 h-14 object-contain' />
 
             <div className='hidden lg:flex items-center gap-12'>

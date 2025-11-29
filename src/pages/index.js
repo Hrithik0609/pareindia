@@ -1,147 +1,15 @@
 import React from 'react';
+import Footer from '@/shared/Footer';
 import Header from '@/shared/Header';
 import PrimaryButton from '@/shared/PrimaryButton';
-import Footer from '@/shared/Footer';
-
-const whyChoose = [
-  {
-    name: 'Quality Products',
-    value: '22+'
-  },
-  {
-    name: 'Shades to Choose',
-    value: '55+'
-  },
-  {
-    name: 'Cities Served',
-    value: '500+'
-  },
-  {
-    name: 'Architectural Projects',
-    value: '50000+'
-  },
-]
-
-const innovativeRanges = [
-  {
-    name: 'Innov+',
-    description: 'Realistic Wooden Ceiling System',
-    perks: [
-      {
-        name: 'Real Wood Look'
-      },
-      {
-        name: 'Easy to Install'
-      },
-    ]
-  },
-  {
-    name: 'Innov2+',
-    description: 'Never Seen Before Ceiling & Wall Panels',
-    perks: [
-      {
-        name: 'First Time in the World'
-      },
-      {
-        name: 'Fire Retardant'
-      },
-    ]
-  },
-  {
-    name: 'Easy+',
-    description: 'Easy to Install System',
-    perks: [
-      {
-        name: 'No Ply Required'
-      },
-      {
-        name: 'Reduce Cost of Labour & Save Time'
-      },
-    ]
-  },
-  {
-    name: 'Dura+',
-    description: 'Exterior Facade System',
-    perks: [
-      {
-        name: 'UV Protected'
-      },
-      {
-        name: 'Real Wood'
-      },
-      {
-        name: 'Waterproof'
-      },
-    ]
-  },
-  {
-    name: 'Baffle',
-    description: 'New Age Ceiling System',
-    perks: [
-      {
-        name: 'Customizable Shades'
-      },
-      {
-        name: 'Customizable Length'
-      },
-    ]
-  },
-  {
-    name: 'Acoustic',
-    description: 'Accoustic Comfort with a Stylish Touch',
-    perks: [
-      {
-        name: 'Sound Absorbent'
-      },
-      {
-        name: 'NRC Rating'
-      },
-    ]
-  },
-
-  {
-    name: 'Pare Luxe',
-    description: 'Luxury Wall & Ceiling Panels for Modern Interiors',
-    perks: [
-      {
-        name: 'Dead Matt Look'
-      },
-      {
-        name: 'Anti Bacterial'
-      },
-      {
-        name: 'Waterproof'
-      },
-    ]
-  },
-
-  {
-    name: 'Xteria Slim',
-    description: 'Engineered ExteriorGrade Wall Panels',
-    perks: [
-      {
-        name: 'Easy-to-Install'
-      },
-      {
-        name: 'Fire Retardant'
-      },
-      {
-        name: '10-Year Warranty'
-      },
-    ]
-  },
-]
+import { innovativeRanges, whyChoose } from '@/utils/helpers';
 
 const Home = () => {
   return (
     <div className='flex flex-col w-full min-h-screen bg-white'>
       <Header />
 
-      {/* <div className='flex flex-col w-full min-h-screen items-center justify-center'>
-        <p className='text-base'>Video</p>
-      </div> */}
-
-      <div className='flex flex-col w-full lg:min-h-screen items-center lg:p-16 p-6 lg:gap-7 gap-5'>
+      <div className='flex flex-col w-full lg:min-h-screen items-center lg:p-16 p-6 lg:gap-7 gap-5 mt-16 lg:mt-12'>
         <h2 className='lg:text-5xl text-3xl font-medium text-[#121212]'>Explore our <span className='font-semibold'>Range by places</span></h2>
 
         <div className='grid lg:grid-cols-2 lg:gap-7 gap-5 w-full lg:h-[600px]'>
@@ -196,9 +64,7 @@ const Home = () => {
       </div>
 
       <div className='flex lg:flex-row flex-col lg:items-center lg:p-16 p-6 lg:justify-between bg-[#c7200e] lg:gap-0 gap-4'>
-
         <h2 className='lg:text-5xl text-3xl font-medium text-white'>Why Choose <span className='font-semibold'>PARE?</span></h2>
-
 
         <div className='bg-white rounded-2xl flex lg:flex-row flex-col lg:items-center py-4 lg:px-0 px-4 lg:divide-y-0 divide-y lg:divide-x-2 divide-[#12121250]'>
           {
