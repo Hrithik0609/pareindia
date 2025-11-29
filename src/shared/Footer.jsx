@@ -1,52 +1,6 @@
-import Link from 'next/link'
-import React from 'react'
-
-const footerLinks = [
-  {
-    name: 'Home',
-    link: '/home'
-  },
-  {
-    name: 'Blog',
-    link: '/blog'
-  },
-  {
-    name: 'Brochures',
-    link: '/brochures'
-  },
-  {
-    name: 'About',
-    link: '/about'
-  },
-  {
-    name: 'Careers',
-    link: '/careers'
-  },
-  {
-    name: 'Cookie Policy',
-    link: '/cookie-policy'
-  },
-  {
-    name: 'Products',
-    link: '/products'
-  },
-  {
-    name: 'Resources',
-    link: '/resources'
-  },
-  {
-    name: 'Privacy Policy',
-    link: '/privacy-policy'
-  },
-  {
-    name: 'Gallery',
-    link: '/gallery'
-  },
-  {
-    name: 'Contact',
-    link: '/contact'
-  },
-]
+import React from 'react';
+import Link from 'next/link';
+import { footerLinks } from '@/utils/helpers';
 
 const Footer = () => {
   return (
@@ -98,7 +52,6 @@ const Footer = () => {
         <img src="/logo.png" alt="logo" className='w-5/12 grayscale object-contain object-bottom-right absolute lg:-bottom-16 -bottom-6 -right-6 lg:-right-15' />
 
       </div>
-
 
     </div>
   )
