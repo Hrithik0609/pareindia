@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.debug{
+    @apply border border-red-500
+}
+
+button{
+    @apply cursor-pointer select-none
+}
