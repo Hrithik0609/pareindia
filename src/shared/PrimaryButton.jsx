@@ -10,7 +10,7 @@ const PrimaryButton = ({ label, onClick, type = "button", width }) => {
             onClick={onClick}
             type={type}
             style={{ backgroundColor: color }}
-            className={`${width || 'w-full'} py-2.5 px-4 rounded-lg text-white text-sm lg:text-base font-semibomeld`}
+            className={`${width || 'w-full'} py-2.5 px-4 rounded-lg text-white text-sm lg:text-base font-semibold`}
         >
             {label}
         </button>

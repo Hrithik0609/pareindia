@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 
 import Head from "next/head";
 import { Onest } from "next/font/google"
-import Chatbot from "@/components/Chatbot";
+import Chatbot from "@/shared/Chatbot";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
         </Head>
         <Component {...pageProps} />
 
-        <Chatbot />
+        {/* <Chatbot /> */}
       </main>
     </ColorContextProvider>
   );
