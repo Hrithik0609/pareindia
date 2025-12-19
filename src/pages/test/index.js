@@ -3,13 +3,39 @@ import { useTheme } from '@/store/useTheme';
 import { useParams } from '@/store/useParams';
 import PrimaryButton from '@/shared/PrimaryButton';
 
-const Test = () => {
+export async function getServerSideProps() {
+
+    try {
+        let data = await fetch('https://jsonplaceholder.typicode.com/posts')
+        data = await data.json()
+        if (!data) {
+            throw new Error('Something went wrong')
+        }
+
+        return {
+            props: {
+                posts: data
+            }
+        }
+    }
+    catch (e) {
+        console.log(e)
+    }
+
+    return {
+        props: {
+            posts: []
+        }
+    }
+}
+
+const Test = ({ posts }) => {
 
     const { theme, toggleLight, toggleDark } = useTheme()
 
     const { params, handleChange } = useParams()
 
-    console.log(params, 'params')
+    console.log(posts, 'posts')
 
     return (
         <div className='flex flex-col items-center justify-center w-full h-screen gap-4 p-4'>
@@ -37,7 +63,7 @@ const Test = () => {
 
             <input
                 name="phone"
-                value={params?.Phone}
+                value={params?.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
                 className='p-3 outline-none border border-[#808080] w-full lg:w-60'
