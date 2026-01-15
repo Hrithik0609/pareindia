@@ -1,7 +1,7 @@
 export const headerLinks = [
   {
     name: 'Home',
-    link: '/home',
+    link: '/',
   },
   {
     name: 'About',
@@ -20,15 +20,15 @@ export const headerLinks = [
     link: '/resources',
   },
   {
-    name: 'Contact',
-    link: '/contact',
+    name: 'Contact Us',
+    link: '/contact-us',
   },
 ]
 
 export const footerLinks = [
   {
     name: 'Home',
-    link: '/home'
+    link: '/'
   },
   {
     name: 'Blog',
@@ -67,8 +67,8 @@ export const footerLinks = [
     link: '/gallery'
   },
   {
-    name: 'Contact',
-    link: '/contact'
+    name: 'Contact Us',
+    link: '/contact-us'
   },
 ]
 
